@@ -1,16 +1,85 @@
-# React + Vite
+# React Router Navigation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application demonstrating **React Router DOM** with nested routes, reusable components, dynamic routing, and error handling.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React Router DOM navigation
+* Reusable `Template` component
+* Nested routes
+* Home, About, Services, and Contact pages
+* Dynamic username route
+* Custom error page for invalid routes
+* Clean component-based structure
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* JavaScript
+* React Router DOM
+* HTML
+* CSS
+* Vite
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Services.jsx
+│   ├── contact.jsx
+│   ├── error.jsx
+│   ├── Welcomemsg.jsx
+│   └── Template.jsx
+│
+└── App.jsx
+```
+
+## 🔗 Routes
+
+| Route                | Page            |
+| -------------------- | --------------- |
+| `/`                  | Home            |
+| `/about`             | About           |
+| `/services`          | Services        |
+| `/contact`           | Contact         |
+| `/welcome/:username` | Welcome Message |
+| Invalid route        | Error Page      |
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate to the project folder:
+
+```bash
+cd YOUR_PROJECT_NAME
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 🎯 Purpose
+
+The purpose of this project is to understand and implement client-side routing in React using **React Router DOM**, including nested routes, dynamic routes, navigation links, and error handling.
+
+## 👨‍💻 Author
+
+**Faruk Yazir**
+
+[LinkedIn](https://www.linkedin.com/in/farukyazir/)
